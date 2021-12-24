@@ -16,14 +16,26 @@ div {
   background-image: url('https://i.ibb.co/Jk2gWsW/instagram-christmas-image-2-1.jpg');
 }
 </style>
+<script>
+const rickroll = function (event) { 
+    event.preventDefault(); 
+    document.write("Get 'rolled lol"); 
+    window.setTimeout(function() {
+        document.body.innerHTML = '<iframe width="966" height="543" src="https://www.youtube.com/embed/dQw4w9WgXcQ?&autoplay=1" frameborder="0"></iframe>';
+        console.info("https://scratch.mit.edu/discuss/post/5069102/");
+    }, 500);
+}
+document.querySelectorAll(".rickroll").forEach(el => el.addEventListener("click", rickroll));
+</script>
+
 </head>
 <body>
 <img src="" alt="instagram-christmas-image-2-1" border="0">
-<p> Lmao </p>
-<p> Your ip just got logged :p </p> 
+<p> Lmao ...</p>
+<p> ~ sabi </p> 
 <div class="vembedr">
 <div>
-<iframe src="https://www.youtube.com/embed/iik25wqIuFo" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+<iframe src="https://www.youtube.com/embed/iik25wqIuFo" class="rickroll" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
 </div>
 </div>
 </body>
